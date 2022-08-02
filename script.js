@@ -9,7 +9,7 @@ function createDivsForDrawing() {
         const newDiv = document.createElement("div");
         drawingPadDiv.appendChild(newDiv);
         //add attributes
-        newDiv.setAttribute("class" , "sqare");
+        newDiv.setAttribute("class" , "square");
     }
    
 
