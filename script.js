@@ -16,8 +16,18 @@ function createDivsForDrawing() {
         //add attributes
         newDiv.setAttribute("class" , "grid-basis");
     }
-    
-   
-
 }
 createDivsForDrawing()
+
+//declare all square elements globally
+const squareDivs = document.getElementsByClassName("square");
+const squareDivsArray = Array.from(squareDivs);
+
+function addHoverFunctionality(){
+    squareDivsArray.forEach((element) => {
+        element.addEventListener('mouseover', ((e) => {
+            e.target.style.backgroundColor = "#FFC0CB"
+        }))
+    })
+}
+addHoverFunctionality()
