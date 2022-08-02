@@ -1,0 +1,27 @@
+#drawing-pad{
+    display:flex;
+    border: 5px solid black;
+    width: 40rem;
+    height: 40rem;
+
+}
+.grid-basis{
+    display:flex;
+    flex-direction:column;
+}
+.square{
+    width: 2.5rem;
+    height: 2.5rem;
+    box-shadow:0px 0px 0px 1px gray;
+
+}
+body{
+    display: flex;
+    flex-direction:column;
+}
+.main-container{
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
