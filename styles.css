@@ -73,5 +73,12 @@ button{
    color: #e6fffa;
    height: 50px;
    align-self: center;
-
 }
+
+footer, a{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
