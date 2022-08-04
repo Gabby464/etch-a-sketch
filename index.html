@@ -11,7 +11,7 @@
 
 <body>
     <div class="main-container">
-        <h1 id="main-title">Etch a Skatch</h1>
+        <h1 id="main-title">Etch a Sketch</h1>
         <h2 id="game-description">A simple drawing site. Do your best and have fun!</h2>
     </div>
     <div class ="secondary-container">
@@ -19,7 +19,10 @@
         <button class = "option">Change grid size</button>
         <div class="pop-up" style="display: none" >
             <p>Enter a number from 1 to 100:</p>
-            <input type="text">
+            <input type="range" id="cells-number" name="cells"
+         min="1" max="100">
+            <label id = "size-label" for = "cells-number"></label>
+            <button id = "confirm">Click to confirm</button>
         </div>
     </div>
     <div id="drawing-pad"></div>
