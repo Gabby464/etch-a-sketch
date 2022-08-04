@@ -49,7 +49,7 @@ const popUpEl = document.getElementsByClassName("pop-up")
 function popUpFuncrionality() {
     const buttonEl = document.getElementsByClassName("option");
     buttonEl[0].addEventListener("click", () => {
-        popUpEl[0].style = "display: block";
+        popUpEl[0].style = "display: flex";
         submitNewGrid()
     })
 }
