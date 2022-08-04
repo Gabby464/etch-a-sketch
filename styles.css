@@ -1,6 +1,6 @@
 #drawing-pad {
     display: flex;
-    border: 5px solid black;
+    border: 3px solid #265a67;
     width: 40rem;
     height: 40rem;
 
@@ -13,6 +13,7 @@
 
 .square {
     box-shadow: 0px 0px 0px 1px gray;
+    background-color: #e6fffa;
 }
 .secondary-container{
     display: flex;
@@ -22,6 +23,9 @@
 body {
     display: flex;
     flex-direction: column;
+    background: rgb(245,230,255);
+    background: linear-gradient(0deg, rgba(245,230,255,0.6619690112373074) 0%, rgba(255,156,85,0.8048261540944502) 10%, rgba(45,224,253,0.6283555658591562) 100%);
+    font-family: 'Square Peg', cursive;
 }
 
 .main-container {
