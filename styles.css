@@ -23,6 +23,7 @@
 body {
     display: flex;
     flex-direction: column;
+    gap: 25px;
     background: rgb(245,230,255);
     background: linear-gradient(0deg, rgba(245,230,255,0.6619690112373074) 0%, rgba(255,156,85,0.8048261540944502) 10%, rgba(45,224,253,0.6283555658591562) 100%);
     font-family: 'Square Peg', cursive;
@@ -33,4 +34,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
+
+#main-title{
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
