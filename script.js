@@ -1,9 +1,9 @@
 const drawingPadDiv = document.getElementById("drawing-pad");
 //16 cells by default but the user can change that at any given point
 let numberOfCells = 16; //default value
+
 //create and add attirbutes to divs for drawing
 function createDivsForDrawing(numberOfCells) {
-    //create
     const newDiv = document.createElement("div");
     drawingPadDiv.innerHTML = ""
     const divArray = [];
@@ -23,17 +23,25 @@ function createDivsForDrawing(numberOfCells) {
     }
 
 }
-createDivsForDrawing(16) //declaring the function with the default value, so when the HTML loads a 16x16 grid loads 
+createDivsForDrawing(16) //declaring the function with the default value, so when the HTML loads, a 16x16 grid is generated  
 //add functionality to all created divs, so they can change colors on hover;
 function addHoverFunctionality() {
     const squareDivs = document.getElementsByClassName("square");
     const squareDivsArray = Array.from(squareDivs);
     squareDivsArray.forEach((element) => {
         element.addEventListener('mouseover', ((e) => {
-            e.target.style.backgroundColor = "#FFC0CB"
+            e.target.style.backgroundColor = generateRandomColor()
         }))
     })
 }
+
+function generateRandomColor() {
+    const palette = ["#FFBC42", "#D81159", "#8f2d56", "#218380", "#73d2de"];
+    const paletteLength = palette.length;
+    let randomColorIndex = Math.floor(Math.random() * paletteLength);
+    return palette[randomColorIndex];
+  }
+
 //next create Pop-up and edit grid measures - https://www.w3schools.com/howto/howto_js_popup_form.asp
 addHoverFunctionality()
 //pop-up created -> add show/hide functionality onclick;
