@@ -1,26 +1,31 @@
-#drawing-pad{
-    display:flex;
+#drawing-pad {
+    display: flex;
     border: 5px solid black;
     width: 40rem;
     height: 40rem;
 
 }
-.grid-basis{
-    display:flex;
-    flex-direction:column;
-}
-.square{
-    width: 2.5rem;
-    height: 2.5rem;
-    box-shadow:0px 0px 0px 1px gray;
 
-}
-body{
+.grid-basis {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
-.main-container{
-    flex-direction:column;
+
+.square {
+    box-shadow: 0px 0px 0px 1px gray;
+}
+.secondary-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container {
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
